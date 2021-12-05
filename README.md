@@ -64,3 +64,9 @@ https://theinstaclone.herokuapp.com/
 ### RobbinGit
 [Gmail](robbingithimbo@gmail.com)
 [Github](https://github.com/RobbinGIT)
+
+## LICENSE 
+
+This project is licensed under the MIT License - see the ## License
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) file for details
