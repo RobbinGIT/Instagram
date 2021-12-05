@@ -23,3 +23,11 @@ pip install -r requiremnts.txt
 > EMAIL_USERNAME = 'your email address'
 > EMAIL_PASSWORD = 'your password' 
 ```
+- Now make the migrations.
+```
+python manage.py migrate
+```
+- Commit the migrations.
+```
+python manage.py makemigrations
+```
