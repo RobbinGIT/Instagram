@@ -31,3 +31,12 @@ python manage.py migrate
 ```
 python manage.py makemigrations
 ```
+- Create a super user.
+```
+python manage.py createsuper
+```
+- Run the app.
+```
+python manage.py runserver
+```
+- Open the app at `localhost:8000` or `http://127.0.0.1:8000/`
