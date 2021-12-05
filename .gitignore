@@ -4,3 +4,4 @@ virtual/
 .idea
 __pycache__
 .vscode
+requirements.txt
