@@ -11,6 +11,10 @@ Instagram clone using python django with a lot of Instagram features.
 - Posting Images.
 - Like and comment on a post.
 
+## Admin Dashboard
+
+[Admin Dashboard Login](https://theinstaclone.herokuapp.com/admin/)  with credentials
+
 ### Installation
 - Make sure Python is installed.
 - Clone the repository and change your directory to Instagram_clone.
