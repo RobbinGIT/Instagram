@@ -50,6 +50,13 @@ python manage.py runserver
 ```
 - Open the app at `localhost:8000` or `http://127.0.0.1:8000/`
 
+## TECHNOLOGIES USED 
+* [Python3.8](https://www.python.org/)
+* [Django](https://docs.djangoproject.com)
+* [Heroku](https://heroku.com)
+* HTML - For building Mark Up pages/User Interface
+* CSS - For Styling User Interface
+
 ## Contact Me 
 ### RobbinGit
 [Gmail](robbingithimbo@gmail.com)
