@@ -11,9 +11,9 @@ class TestImages(TestCase):
     '''
     function that runs before others
     '''
-    self.test_user = User(username = 'denis')
+    self.test_user = User(username = 'Robbin')
     self.test_user.save()
-    self.image = Image(image = 'denis.jpeg',name = 'denis',caption = 'denis',user = self.test_user)
+    self.image = Image(image = 'Robbin.jpeg',name = 'Robbin',caption = 'Robbin',user = self.test_user)
     self.comments = Comment(comment = 'awesome',image = self.image,user = self.test_user)
 
   def test_instance(self):
@@ -27,7 +27,7 @@ class TestImages(TestCase):
 
 
   def test_delete_image(self):
-    self.image2 = Image(image = 'mugendi.jpeg',name = 'mugendi',caption = 'mugendi',user = self.test_user)
+    self.image2 = Image(image = 'mwangi.jpeg',name = 'mwangi',caption = 'mwangi',user = self.test_user)
     self.image2.save_image()
     self.image.save_image()
     self.image.delete_post()
@@ -37,7 +37,7 @@ class TestImages(TestCase):
 
   def test_search(self):
     self.image.save_image()
-    self.image2 = Image(image = 'mugendi.jpeg',name = 'mugendi',caption = 'mugendi',user = self.test_user)
+    self.image2 = Image(image = 'mwangi.jpeg',name = 'mwangi',caption = 'mwangi',user = self.test_user)
     self.image2.save_image()
     search_term = "e"
     search1 = Image.search_images(search_term)
@@ -47,7 +47,7 @@ class TestImages(TestCase):
 
   def test_display_images(self):
     self.image.save_image()
-    self.image2= Image(image = 'mugendi.jpeg',name = 'mugendi',caption = 'mugendi',user = self.test_user)
+    self.image2= Image(image = 'mwangi.jpeg',name = 'mwangi',caption = 'mwangi',user = self.test_user)
     self.image2.save_image()
     dt = Image.display_images()
     self.assertEqual(len(dt),2)
@@ -58,9 +58,9 @@ class TTestComments(TestCase):
   class that will test the profile model
   '''
   def setUp(self):
-    self.test_user = User(username = 'denis')
+    self.test_user = User(username = 'Robbin')
     self.test_user.save()
-    self.image = Image(image = 'denis.jpeg',name = 'denis',caption = 'denis',user = self.test_user)
+    self.image = Image(image = 'Robbin.jpeg',name = 'Robbin',caption = 'Robbin',user = self.test_user)
     self.comments = Comment(comment = 'awesome',image = self.image,user = self.test_user)
 
 
@@ -77,9 +77,9 @@ class TestImages(TestCase):
     '''
     function that runs before others
     '''
-    self.test_user = User(username = 'denis')
+    self.test_user = User(username = 'Robbin')
     self.test_user.save()
-    self.image = Image(image = 'denis.jpeg',name = 'denis',caption = 'denis',user = self.test_user)
+    self.image = Image(image = 'Robbin.jpeg',name = 'Robbin',caption = 'Robbin',user = self.test_user)
     self.comments = Comment(comment = 'awesome',image = self.image,user = self.test_user)
 
   def test_instance(self):
@@ -93,7 +93,7 @@ class TestImages(TestCase):
 
 
   def test_delete_image(self):
-    self.image2 = Image(image = 'mugendi.jpeg',name = 'mugendi',caption = 'mugendi',user = self.test_user)
+    self.image2 = Image(image = 'mwangi.jpeg',name = 'mwangi',caption = 'mwangi',user = self.test_user)
     self.image2.save_image()
     self.image.save_image()
     self.image.delete_post()
@@ -103,7 +103,7 @@ class TestImages(TestCase):
 
   def test_search(self):
     self.image.save_image()
-    self.image2 = Image(image = 'mugendi.jpeg',name = 'mugendi',caption = 'mugendi',user = self.test_user)
+    self.image2 = Image(image = 'mwangi.jpeg',name = 'mwangi',caption = 'mwangi',user = self.test_user)
     self.image2.save_image()
     search_term = "e"
     search1 = Image.search_images(search_term)
@@ -112,7 +112,7 @@ class TestImages(TestCase):
 
   def test_display_images(self):
     self.image.save_image()
-    self.image2= Image(image = 'mugendi.jpeg',name = 'mugendi',caption = 'mugendi',user = self.test_user)
+    self.image2= Image(image = 'mwangi.jpeg',name = 'mwangi',caption = 'mwangi',user = self.test_user)
     self.image2.save_image()
     dt = Image.display_images()
     self.assertEqual(len(dt),2)
@@ -123,9 +123,9 @@ class TTestComments(TestCase):
   class that will test the profile model
   '''
   def setUp(self):
-    self.test_user = User(username = 'denis')
+    self.test_user = User(username = 'Robbin')
     self.test_user.save()
-    self.image = Image(image = 'denis.jpeg',name = 'denis',caption = 'denis',user = self.test_user)
+    self.image = Image(image = 'Robbin.jpeg',name = 'Robbin',caption = 'Robbin',user = self.test_user)
     self.comments = Comment(comment = 'awesome',image = self.image,user = self.test_user)
 
 
