@@ -30,3 +30,12 @@ def test_delete_image(self):
     self.image.delete_post()
     images = Image.objects.all()
     self.assertEqual(len(images),1) 
+
+def test_search(self):
+    self.image.save_image()
+    self.image2 = Image(image = 'mwangi.jpeg',name = 'mwangi',caption = 'mwangi',user = self.test_user)
+    self.image2.save_image()
+    search_term = "e"
+    search1 = Image.search_images(search_term)
+    search2 = Image.objects.filter(name__icontains = search_term)
+    self.assertEqual(len(search2),len(search1))
