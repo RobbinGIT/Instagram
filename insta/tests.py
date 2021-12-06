@@ -39,3 +39,10 @@ def test_search(self):
     search1 = Image.search_images(search_term)
     search2 = Image.objects.filter(name__icontains = search_term)
     self.assertEqual(len(search2),len(search1))
+
+def test_display_images(self):
+    self.image.save_image()
+    self.image2= Image(image = 'mwangi.jpeg',name = 'mwangi',caption = 'mwangi',user = self.test_user)
+    self.image2.save_image()
+    dt = Image.display_images()
+    self.assertEqual(len(dt),2)
