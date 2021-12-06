@@ -46,3 +46,14 @@ def test_display_images(self):
     self.image2.save_image()
     dt = Image.display_images()
     self.assertEqual(len(dt),2)
+
+class TTestComments(TestCase):
+  '''
+  class that will test the profile model
+  '''
+  def setUp(self):
+    self.test_user = User(username = 'Githimbo')
+    self.test_user.save()
+    self.image = Image(image = 'Githimbo.jpeg',name = 'Githimbo',caption = 'Githimbo',user = self.test_user)
+    self.comments = Comment(comment = 'awesome',image = self.image,user = self.test_user)
+
