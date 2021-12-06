@@ -22,3 +22,11 @@ class TestImages(TestCase):
     self.image.save_image()
     image = Image.objects.all()
     self.assertTrue(len(image)>0)
+
+def test_delete_image(self):
+    self.image2 = Image(image = 'mwangi.jpeg',name = 'mwangi',caption = 'mwangi',user = self.test_user)
+    self.image2.save_image()
+    self.image.save_image()
+    self.image.delete_post()
+    images = Image.objects.all()
+    self.assertEqual(len(images),1) 
